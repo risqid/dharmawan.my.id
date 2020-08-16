@@ -2,7 +2,7 @@
 # Site Settings
 
 baseURL = "https://dharmawan.netlify.app"
-title = "dharmawan.my.id"
+title = "Dharmawan Blog"
 languageCode = "en"
 hasCJKLanguage = false
 # Copyright information (Markdown supported)
