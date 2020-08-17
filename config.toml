@@ -1,7 +1,7 @@
 ##########################################
 # Site Settings
 
-baseURL = "https:dharmawan.my.id"
+baseURL = "dharmawan.my.id"
 title = "Dharmawan Blog"
 languageCode = "id"
 hasCJKLanguage = false
