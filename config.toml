@@ -3,7 +3,7 @@
 
 baseURL = "https://dharmawan.netlify.app"
 title = "Dharmawan Blog"
-languageCode = "en"
+languageCode = "id"
 hasCJKLanguage = false
 # Copyright information (Markdown supported)
 copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
@@ -12,7 +12,7 @@ copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0
 theme = "meme"
 
 # `hugo new` automatically opened text editor
-newContentEditor = ""
+newContentEditor = "code"
 
 # i18n
 defaultContentLanguage = "en"
