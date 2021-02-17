@@ -22,11 +22,11 @@ class Laporan extends CI_Controller
     $this->db->select('tahun');
     $data['tahun'] = $this->db->get('neraca')->result_array();
 
-    $this->load->view('templates/header', $data);
-    $this->load->view('templates/navbar');
-    $this->load->view('templates/sidebar', $data);
+    $this->load->view('silk/templates/header', $data);
+    $this->load->view('silk/templates/navbar');
+    $this->load->view('silk/templates/sidebar', $data);
     $this->load->view('silk/laporan/index', $data);
-    $this->load->view('templates/footer');
+    $this->load->view('silk/templates/footer');
   }
 
   public function pdf($tahun)

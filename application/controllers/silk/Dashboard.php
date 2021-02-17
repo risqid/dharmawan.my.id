@@ -18,11 +18,11 @@ class Dashboard extends CI_Controller
 		$data['pajak_badan'] = $this->dashboard_model->get_pajak_badan();
 		$data['pajak_pribadi'] = $this->dashboard_model->get_pajak_pribadi();
 
-		$this->load->view('templates/header', $data);
-		$this->load->view('templates/navbar');
-		$this->load->view('templates/sidebar', $data);
+		$this->load->view('silk/templates/header', $data);
+		$this->load->view('silk/templates/navbar');
+		$this->load->view('silk/templates/sidebar', $data);
 		$this->load->view('silk/dashboard/index', $data);
-		$this->load->view('templates/footer');
+		$this->load->view('silk/templates/footer');
 	}
 	function chart_penjualan()
 	{

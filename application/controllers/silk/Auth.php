@@ -7,7 +7,7 @@ class Auth extends CI_Controller
 	public function index()
 	{
 		// prevent user access to auth controller directly in url 
-		if ($this->session->userdata('username')) {
+		if ($this->session->userdata('username_silk')) {
 			redirect('silk/dashboard');
 		}
 		$data['title'] = "Log in";
@@ -25,9 +25,9 @@ class Auth extends CI_Controller
 			$this->_login();
 		}
 
-		$this->load->view('templates/header', $data);
+		$this->load->view('silk/templates/header', $data);
 		$this->load->view('silk/auth/index', $data);
-		$this->load->view('templates/footer');
+		$this->load->view('silk/templates/footer');
 	}
 
 	private function _login()
@@ -41,7 +41,7 @@ class Auth extends CI_Controller
 		if ($user) {
 			// if password is correct
 			if (password_verify($password, $user['password'])) {
-				$data = ['username' => $user['username']];
+				$data = ['username_silk' => $user['username']];
 				$this->session->set_userdata($data);
 				redirect('silk/dashboard');
 			} else {
@@ -56,7 +56,7 @@ class Auth extends CI_Controller
 
 	public function logout()
 	{
-		$this->session->unset_userdata('username');
+		$this->session->unset_userdata('username_silk');
 		redirect(base_url());
 	}
 }

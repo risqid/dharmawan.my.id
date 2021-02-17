@@ -103,11 +103,11 @@ class Labarugi extends CI_Controller
 			}
 		}
 
-		$this->load->view('templates/header', $data);
-		$this->load->view('templates/navbar');
-		$this->load->view('templates/sidebar', $data);
+		$this->load->view('silk/templates/header', $data);
+		$this->load->view('silk/templates/navbar');
+		$this->load->view('silk/templates/sidebar', $data);
 		$this->load->view('silk/labarugi/index', $data);
-		$this->load->view('templates/footer');
+		$this->load->view('silk/templates/footer');
 	}
 
 	function hapus($id)
