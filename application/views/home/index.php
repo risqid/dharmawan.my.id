@@ -8,7 +8,6 @@
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link href="<?= base_url('assets/'); ?>css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="<?= base_url('assets/'); ?>css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
@@ -20,8 +19,8 @@
             <i class="large material-icons tooltipped" data-position="top" data-tooltip="demo">apps</i>
         </a>
         <ul>
-            <li><a href="<?= base_url('silk/auth'); ?>" class="btn-floating green tooltipped" data-position="top" data-tooltip="laporan keuangan"><i class="material-icons">monetization_on</i></a></li>
-            <li><a href="<?= base_url('sp/auth'); ?>" class="btn-floating blue tooltipped" data-position="top" data-tooltip="pembukuan"><i class="material-icons">book</i></a></li>
+            <li><a href="<?= base_url('zakat'); ?>" class="btn-floating green tooltipped" data-position="top" data-tooltip="perhitungan zakat"><i class="material-icons">monetization_on</i></a></li>
+            <li><a href="https://cvmajulancar.epizy.com" target="_blank" class="btn-floating blue tooltipped" data-position="top" data-tooltip="pembukuan"><i class="material-icons">book</i></a></li>
         </ul>
     </div>
 
